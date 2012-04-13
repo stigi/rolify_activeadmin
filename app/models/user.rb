@@ -1,6 +1,7 @@
 class User
-	rolify:role_cname => 'Role'
   include Mongoid::Document
+  extend Rolify
+  rolify:role_cname => 'Role'
   # Include default devise modules. Others available are:
   # :token_authenticatable, :encryptable, :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
