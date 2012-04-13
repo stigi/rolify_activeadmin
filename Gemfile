@@ -42,3 +42,4 @@ gem 'bson_ext'
 
 gem 'rolify'
 gem 'activeadmin'
+gem "formtastic", "~> 2.1.1"
